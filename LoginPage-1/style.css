@@ -1,6 +1,7 @@
 body {
-    background-image: url("img/image.jpeg");
-    background-color: #7cb1b1;
+    --background-image: url("img/image.jpeg");
+    background-image: linear-gradient(to right, rgb(17, 69, 128), rgb(40, 195, 206));
+    --background-color: #7cb1b1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
