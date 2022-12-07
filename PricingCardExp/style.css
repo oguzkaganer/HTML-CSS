@@ -1,0 +1,53 @@
+body {
+}
+
+div.main {
+  border: 5px solid brown;
+  width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+div.main button.select {
+  width: 155px;
+  padding: 5px;
+}
+
+div.cards {
+  border: 2px solid red;
+}
+
+div.cards div[class|="activity"] {
+  border: 2px solid black;
+  height: 400px;
+}
+
+div.cards div[class|="activity"] div.image {
+  border: 1px solid orange;
+  height: 100px;
+}
+
+div.cards div[class|="activity"] div.name {
+  border: 2px solid blue;
+}
+
+div.cards div[class|="activity"] div.name div {
+  width: 50px;
+  height: 50px;
+  background-color: cyan;
+  border-radius: 100%;
+  margin: auto;
+}
+
+div.cards div[class|="activity"] div.price {
+  border: 2px solid green;
+}
+
+div.cards div[class|="activity"] div.location {
+  border: 2px solid hotpink;
+}
+
+div.cards div[class|="activity"] div.button {
+  border: 2px solid yellow;
+}
+
