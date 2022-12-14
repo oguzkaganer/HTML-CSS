@@ -1,25 +1,20 @@
-function showHideItems(clsName){
-    var itemsHolder=document.getElementsByClassName(clsName)[0];
-    var itemStyle=itemsHolder.style;
-    itemStyle.display=="block"?itemStyle.display="none":itemStyle.display="block";
+var options = document.getElementById("options");
+var text = document.getElementById("text");
+text.innerHTML = document.getElementById("option1").innerHTML;
+
+function dropdown() {
+  var options = document.getElementById("options");
+  options.style.display == "none"
+    ? (options.style.display = "block")
+    : (options.style.display = "none");
 }
-function slideBg(index){
-   
-    var slider=document.getElementsByClassName("slider")[0];
-  
-    var itemsHolder=document.getElementsByClassName("dropdown-items")[0];
-    
-    var ul=itemsHolder.children[1];
-   
-    var listItems=ul.children;
 
-    var clicked = listItems[index].firstElementChild;
+function selectOption(number) {
+  var options = document.getElementById("options");
+  var text = document.getElementById("text");
+  text.innerHTML = document.getElementById("option" + number).innerHTML;
 
-    var distance = clicked.offsetTop;
-
-    console.log(distance);
-   
-    
-
-   
+  options.style.display == "none"
+    ? (options.style.display = "block")
+    : (options.style.display = "none");
 }
