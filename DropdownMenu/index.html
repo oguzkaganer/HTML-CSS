@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   </head>
+<body>
+       
+    <div class="container">
+        <div onclick="showHideItems('dropdown-items')" class="dropdown-btn">
+            <div class="icon-social"><i class="material-icons icon-style">cloud</i></div>
+            <div class="text">Social Media</div>
+            <div class="icon-btn"><i class="material-icons icon-style">arrow_drop_down</i></div>
+        </div>
+        <div class="dropdown-items">
+            <div class="slider"></div>
+            <ul>
+                <li><a onmouseover="slideBg(0);" href="#">Youtube</a></li>
+                <li><a onmouseover="slideBg(1);" href="#">LinkedIn</a></li>
+                <li><a onmouseover="slideBg(2);" href="#">Instagram</a></li>
+                <li><a onmouseover="slideBg(3);" href="#">Twitter</a></li>
+                <li><a onmouseover="slideBg(4);" href="#">Facebook</a></li>   
+            </ul>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
