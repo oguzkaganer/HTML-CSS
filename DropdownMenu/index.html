@@ -13,26 +13,51 @@
   </head>
   <body>
     <div class="main">
-      <div class="menu" onclick="dropdown()">
-        <span id="text">Seçiniz</span>
-        <i class="fa-solid fa-caret-down"></i>
+      <div id="menu" class="menu" onclick="dropdown(),iconrotate()">
+        <span id="text"></span>
+        <i id="icon" class="fa-solid fa-caret-down"></i>
       </div>
       <div class="menuContent" id="menuContent">
-        <ul id="options">
-          <div class="slider"></div>
-          <li class="option1" id="option1" onclick="selectOption(1)">
+        <ul id="options" onmouseleave="outSlider()">
+          <div id="slider" class="slider"></div>
+          <li
+            class="option1"
+            id="option1"
+            onclick="selectOption(1)"
+            onmouseover="moveSlider(1)"
+          >
             <i class="fa-brands fa-youtube"></i> Youtube
           </li>
-          <li class="option2" id="option2" onclick="selectOption(2)">
+          <li
+            class="option2"
+            id="option2"
+            onclick="selectOption(2)"
+            onmouseover="moveSlider(2)"
+          >
             <i class="fa-brands fa-instagram"></i> Instagram
           </li>
-          <li class="option3" id="option3" onclick="selectOption(3)">
+          <li
+            class="option3"
+            id="option3"
+            onclick="selectOption(3)"
+            onmouseover="moveSlider(3)"
+          >
             <i class="fa-brands fa-twitter"></i> Twitter
           </li>
-          <li class="option4" id="option4" onclick="selectOption(4)">
+          <li
+            class="option4"
+            id="option4"
+            onclick="selectOption(4)"
+            onmouseover="moveSlider(4)"
+          >
             <i class="fa-brands fa-facebook"></i> Facebook
           </li>
-          <li class="option5" id="option5" onclick="selectOption(5)">
+          <li
+            class="option5"
+            id="option5"
+            onclick="selectOption(5)"
+            onmouseover="moveSlider(5)"
+          >
             <i class="fa-brands fa-linkedin"></i> LinkedIn
           </li>
         </ul>
