@@ -88,7 +88,9 @@ i {
     transform: translate(-50%, -100%);
 }
 
-div[id=point] {
+
+
+/* div[id=point] {
     --border: 1px solid blue;
     background-color: #ffffff7e;
     border-radius: 10px;
@@ -99,4 +101,21 @@ div[id=point] {
     height: 20px;
     cursor: pointer;
     z-index: 1;
+} */
+
+.point {
+    --border: 1px solid blue;
+    background-color: #ffffff7e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+    display: inline-block;
+    margin: 5px 5px 0 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.point-on{
+    background-color: black;
 }
