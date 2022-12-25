@@ -14,10 +14,6 @@ div.main {
   text-align: center;
   background-color: aliceblue;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 
@@ -25,19 +21,35 @@ div.cards {
   --border: 2px solid red;
   position: relative;
   transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
 }
 
 div.cards:hover {
   transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
 }
+
+div.buttons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+div.buttons div{
+  --border: 1px solid red;
+  width: 100%;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+div[id="btn-kayaking"]{
+  background-color: #00ccff;
+  color: antiquewhite;
+}
+
+div[id="btn-camping"]{
+  background-color: antiquewhite;
+  color: #00ff95;
+}
+
 
 div.cards div[class|="activity"] {
   --border: 2px solid black;
@@ -45,10 +57,6 @@ div.cards div[class|="activity"] {
   width: 320px;
   position: absolute;
   transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
 }
 
 div.cards div[class="activity-kayaking"] {
@@ -64,10 +72,6 @@ div.cards div[class="activity-camping"] {
   line-height: 1.7;
   color: #184214;
   transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
   opacity: 0;
 }
 
@@ -87,10 +91,6 @@ div.cards div[class="activity-kayaking"] div.image {
   background-size: cover;
   height: 150px;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 div.cards div[class="activity-camping"] div.image {
@@ -100,10 +100,6 @@ div.cards div[class="activity-camping"] div.image {
   background-size: cover;
   height: 150px;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 
@@ -136,10 +132,6 @@ div.name span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
 }
 
 div.cards div[class|="activity"] div.price {
@@ -177,10 +169,6 @@ div.cards div[class|="activity"] div.button {
 div.cards div[class="activity-kayaking"] div.button button {
   border: none;
   border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   background-color: #180148;
   color: wheat;
   font-family: 'Poppins', sans-serif;
@@ -191,10 +179,6 @@ div.cards div[class="activity-kayaking"] div.button button {
 div.cards div[class="activity-camping"] div.button button {
   border: none;
   border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   background-color: #184214;
   color: wheat;
   font-family: 'Poppins', sans-serif;
